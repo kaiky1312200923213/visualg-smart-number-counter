@@ -1,38 +1,29 @@
-# criando-contador-numero-inteligente-com-visualg
-Algoritmo "calculaNumeros"
-Var
-   numero, soma, cont, nulo, divPor5 : inteiro
-   media : real
+# Contador e Analisador de Números — Visualg
 
-Inicio
-   soma     <- 0
-   nulo     <- 0
-   divPor5  <- 0
+**Autor:** Kaiky Yoshio Ono Marins  
+**Categoria:** Lógica de programação · Algoritmos  
+**Status:** Exercício introdutório
 
-   para cont de 1 ate 5 faca
-      escreva("Digite o ", cont, "º número: ")
-      leia(numero)
+## Visão geral
 
-      soma <- soma + numero
+Algoritmo em Visualg que recebe cinco números e apresenta estatísticas simples sobre os valores informados.
 
-      se numero = 0 entao
-         nulo <- nulo + 1
-      fimse
+## O que o algoritmo calcula
 
-      se numero mod 5 = 0 entao
-         divPor5 <- divPor5 + 1
-         escreval(">>> O número ", numero, " é divisível por 5!")
-      fimse
+- Soma dos cinco números.
+- Média aritmética.
+- Quantidade de valores iguais a zero.
+- Quantidade de valores divisíveis por cinco.
 
-   fimpara
+## Conceitos praticados
 
-   media <- soma / 5
+- Laço `para`.
+- Acumuladores e contadores.
+- Operador de módulo (`mod`).
+- Operações aritméticas e saída formatada.
 
-   escreval("----------------------------")
-   escreval("Soma dos números  : ", soma)
-   escreval("Média dos números : ", media:0:2)
-   escreval("Quantidade de zeros   : ", nulo)
-   escreval("Divisíveis por 5  : ", divPor5)
-   escreval("----------------------------")
+## Material
 
-Fimalgoritmo
+O código original está preservado em [MATERIAL-ORIGINAL.txt](./MATERIAL-ORIGINAL.txt). Abra o arquivo em um ambiente compatível com Visualg para executar e experimentar.
+
+© 2026 Kaiky Yoshio Ono Marins.
